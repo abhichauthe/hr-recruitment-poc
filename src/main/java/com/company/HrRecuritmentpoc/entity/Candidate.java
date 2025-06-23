@@ -3,9 +3,7 @@ package com.company.HrRecuritmentpoc.entity;
 import com.company.HrRecuritmentpoc.entity.Position;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -13,7 +11,8 @@ import java.util.List;
 
 @Entity
 @Table(name = "candidates")
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class Candidate {
